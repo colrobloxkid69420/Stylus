@@ -1,0 +1,454 @@
+/* ==UserStyle==
+@name           catppuccin transparent
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Makes everything catppuccin-transparent with my own preferences.
+@author         crazykazoo / colrobloxkid
+==/UserStyle== */
+
+/* Example: Exclude URLs using regex */
+
+/*@-moz-document regexp("^(?!https?://(www\.)?youtube\.com).*")*/
+
+* {
+    /* Main fully transparent elements.
+    Ideally, you should have your background color set in userChrome.css */
+    body,
+    html,
+    js,
+    footer,
+    generic,
+    main.page_main,
+    page_main,
+    #container,
+    #content,
+    #background,
+    #chips-wrapper,
+    .footer-container,
+    .gh-header,
+    #sb-main,
+    d-md-flex,
+    .bhZ.bym.baA,
+    .wl,
+    .nH,
+    .question-hyperlink,
+    .feed-background,
+    .notouch,
+    .wf-inactive,
+    .wf-opensans-n3-inactive,
+    .wrap,
+    .unreadpost,
+    .sfbg,
+    .hero,
+    .mailing-list-form,
+    .donate-section,
+    .c_np,
+    .c_uv,
+    ytd-mini-guide-entry-renderer,
+    ytd-app,
+    ytd-mini-guide-renderer,
+    .bg-neutral-background,
+    .threadline,
+    reddit-sidebar-nav,
+    shreddit-post,
+    aside,
+    .reddit-search-bar,
+    comment-body-header,
+    shreddit-comment-tree [data-darkreader-inline-bgcolor],
+    #container.style-scope.ytd-masthead,
+    #chips-content.ytd-feed-filter-chip-bar-renderer,
+    ytd-mini-guide-renderer.style-scope.ytd-app,
+    .g,
+    div#search,
+    .appbar,
+    div#rso,
+    .style-scope,
+    site-wrapper,
+    .header-wrap,
+    div#apcontents,
+    div#apmenu,
+    .MZTnL,
+    .pre-fold,
+    .masthead-dark,
+    [class$='body'],
+    table,
+    .md p,
+    :root .mw-page-container,
+    body.skin-vector,
+    .bg-purple-25,
+    .bg-white,
+    .cp,
+    .kg,
+    .b,
+    .vw,
+    .e,
+    .jq,
+    .css-lq7nfg p,
+    .css-1yeja7r,
+    .page-template.site-main,
+    .post-full-content,
+    [class*='msg-'],
+    [class*='m_'],
+    [class*='msg'] p,
+    .post,
+    #main,
+    #wrapper,
+    .browser_container,
+    .channel-root,
+    .video-player__container,
+    .Layout-sc-1xcs6mc-0,
+    .kgRWSQ,
+    .video-player__container,
+    .video-player__container--resize-calc,
+    .channel-root__right-column,
+    div#header,
+    ul#subnavbar,
+    #page,
+    #top,
+    #page-footer,
+    .mainContent,
+    .flux-checkout,
+    .woocommerce,
+    .blockUI,
+    .blockOverlay,
+    .videoTitle,
+    .blade,
+    .ckeditor,
+    .panel,
+    .pf-v5-c-page__main-section,
+    .pf-v5-c-page,
+    .super-sidebar,
+    .gl-bg-default,
+    .c,
+    #all,
+    div[class^=sideBox],
+    .abstract,
+    .pubInfo,
+    .Hi,
+    .introduction,
+    .hint,
+    .newsSubHead,
+    .form-control::placeholder,
+    .navbar-nav > li > a,
+    .profile-tabs li a,
+    .text-muted,
+    .publication-cite,
+    .publication-others,
+    .notion-frame,
+    .notion-app-inner,
+    .notion-dark-theme,
+    .notion-cursor-listener,
+    #swp-tcr--top-outer-wrapper,
+    [class^=FocusedNav-],
+    [class^=ClaimPapersFeedback-c],
+    [class^=PaperContainer-cls2],
+    .OvPDhc,
+    .tIvQIf .DqBBlb {
+        background-color: transparent !important;
+        background: transparent !important;
+        color: #cdd6f4 !important;
+        --theme-page-background-color: transparent !important;
+    }
+    /* This one is for like some markdown text and code stuff ig? I kinda forgot why I did this. */
+    .markdown-content,
+    .markdown-content pre,
+    .markdown-content code,
+    .markdown-body pre,
+    .markdown-body,
+    .markdown,
+    .feature_text,
+    .bkK > .nH :is(.aKh, .qd),
+    #wikinav li,
+    .text,
+    .headroom--not-top.headroom--pinned .c-header {
+        background-color: rgba(30, 30, 46, .0) !important;
+        background: rgba(30, 30, 46, .0) !important;
+        color: #cdd6f4 !important;
+    }
+    /* This one is for darker elements. cuz 1 color is boring. */
+    .snippet-clipboard-content,
+    div[class^='highlight-source'],
+    div[class*=' highlight-source'],
+    div[class^='highlight-text'],
+    div[class*=' highlight-text'],
+    .s-code-block,
+    .bg-\[\#f4f4f4\],
+    .RNNXgb,
+    #q,
+    #clear_search,
+    #send_search,
+    .quickstart-terminal,
+    .install-badge,
+    .feature-badge,
+    .c_sh,
+    .c_c,
+    .c_ro,
+    .I6TXqe,
+    .jEOdLx,
+    .kbCZWh,
+    .gWvwZz,
+    .btn,
+    .hiqdwv,
+    .gHwUxl,
+    .Box,
+    .input-contrast,
+    .Button--secondary,
+    .Box-header,
+    .menu,
+    .FormControl-input,
+    .FormControl-select,
+    .FormControl-textarea,
+    .form-control,
+    .form-select,
+    .color-bg-default,
+    .bgColor-default,
+    .text-center,
+    .flavor,
+    .bg-white,
+    .sidebar-pane:where(.astro-vrdttmbt),
+    .css-3iav48,
+    .css-mvpo13,
+    .bqHMUD pre,
+    .fThGys,
+    .dYnSsd,
+    .cRXnrY,
+    [class$='container-row'],
+    .nr,
+    .Ar,
+    .z0 > .L3,
+    div.w-asV.bbg.aiw,
+    .aajZCb,
+    .timeline-comment,
+    .timeline-content,
+    :root .mw-parser-output,
+    :root .mw-content-ltr,
+    .css-w345sy,
+    .css-1w8701d,
+    .css-bhuq7c,
+    .css-95td9s,
+    .css-m6yq9u,
+    .dropdown-menu,
+    [class^="popover_a"],
+    #footer,
+    #wikinav,
+    .nav-tabs,
+    #article,
+    .nav,
+    #article-banner-content,
+    #toc-nav,
+    .siteHeader__primaryNavSeparateLine,
+    .siteHeader__topLine,
+    input[type="text"],
+    input[type="search"],
+    .breadcrumb-bar-wrap-outer,
+    .advanced-search,
+    [class^="search_search"],
+    .ui.attached.segment,
+    .form,
+    .block,
+    .overview-card-wrapper,
+    .tag-white,
+    .tag,
+    .secondary,
+    .area-ct-subnav,
+    .ct-switcher,
+    .pf-v5-c-card,
+    .ct-overview-header,
+    .header,
+    .top-bar-fixed,
+    .contextual-nav,
+    .gl-card,
+    .gl-bg-subtle,
+    .o,
+    .lightense-target,
+    #header.ytd-comment-view-model,
+    #header.ytd-item-section-renderer,
+    #header.ytd-video-description-transcript-section-renderer,
+    div.sideBox,
+    #head .navbar-brand,
+    .footer-container,
+    #nav-second .navbar-brand,
+    .profile-header__content,
+    .site-content .entry-content,
+    .prompt,
+    .answer,
+    .glyphicon-chevron-left,
+    .notion-topbar,
+    .focused-nav-container,
+    .u-bgColorWhite,
+    .DesignSystem .u-bgColorWhite,
+    [class^=Base-cls2],
+    .menu-container .style-scope .ytd-multi-page-menu-renderer,
+    .dmnc_chains-site-header-config-frame-frame-module__t6Kjv,
+    .c-hero,
+    .c-header__inner,
+    .geS5n,
+    .m7w29c {
+        background-color: rgba(30, 30, 46, .6) !important;
+        background: rgba(30, 30, 46, .6) !important;
+        color: #cdd6f4 !important;
+        border-radius: 12px !important;
+        border: none !important;
+        box-shadow: rgba(255, 255, 255, 0.06) 0 1px 0, rgba(17, 17, 27, 0.8) 0 1px 3px 0px inset !important;
+        /*backdrop-filter: blur(10px) !important;*/
+    }
+    /* Makes all visited links the same color and have darker background */
+    a:visited,
+    a:visited:hover,
+    a:visited:active {
+        background-color: rgba(30, 30, 46, .6) !important;
+        background: rgba(30, 30, 46, .6) !important;
+        color: rgb(203, 166, 247) !important;
+    }
+    /* Makes all non-visited links the same color and have darker background */
+    .c_nl,
+    a:link:hover,
+    a:link:active,
+    a:link,
+    .content :not(.notheme) a:not(.notheme, .reference-link) {
+        background-color: rgba(30, 30, 46, .0) !important;
+        background: rgba(30, 30, 46, .0) !important;
+        color: rgb(180, 190, 254) !important;
+    }
+    /* yk how you can do markdown tables? the two thingys below are for the background colors of the odd and even columns */
+    .markdown-body table tr,
+    table tr:nth-child(2n) {
+        background-color: rgba(30, 30, 46, .4) !important;
+        background: rgba(30, 30, 46, .4) !important;
+        color: #cdd6f4 !important;
+    }
+    .markdown-body table tr:nth-child(2n),
+    table tr:nth-child(2n+1):not(:first-child) {
+        background-color: rgba(30, 30, 46, .75) !important;
+        background: rgba(30, 30, 46, .75) !important;
+        color: #cdd6f4 !important;
+    }
+    /* Idk why I didn't seperate it into its own script thingy but this is for correctly writing in monkeytype */
+    .correct {
+        color: rgb(180, 190, 254) !important;
+        text-shadow: 0px 0px 5px rgba(180, 190, 254, 0.4);
+    }
+    /* Markdown has headers, and I like em to each have their own color, so these are for that.
+    And also some random other things in like youtube or something. */
+    h1,
+    #article-content h1,
+    #article-content h1 a,
+    .HoXoMd.RjsPE,
+    .F9yp7e {
+        color: rgb(180, 190, 254) !important;
+        text-shadow: 0px 0px 5px rgba(180, 190, 254, 0.4);
+        font-weight: 550;
+    }
+    h2,
+    #article-content h2,
+    #article-content h2 a,
+    .publications-preferences-heading,
+    .gubaDc,
+    .cBGGJ {
+        color: rgb(203, 166, 247) !important;
+        text-shadow: 0px 0px 5px rgba(203, 166, 247, 0.4);
+        font-weight: 550;
+    }
+    #article-content h3,
+    #article-content h3 a,
+    h3 {
+        color: rgb(203, 166, 247) !important;
+        text-shadow: 0px 0px 5px rgba(203, 166, 247, 0.4);
+        font-weight: 550;
+    }
+    h4,
+    #article-content h4,
+    #article-content h4 a {
+        color: rgb(245, 224, 220) !important;
+        text-shadow: 0px 0px 5px rgba(245, 224, 220, 0.4);
+        font-weight: 550;
+    }
+    h5,
+    #article-content h5,
+    #article-content h5 a {
+        color: rgb(245, 194, 231) !important;
+        text-shadow: 0px 0px 5px rgba(245, 194, 231, 0.4);
+        font-weight: 550;
+    }
+    h6,
+    #article-content h6,
+    #article-content h6 a {
+        color: rgb(235, 160, 172) !important;
+        text-shadow: 0px 0px 5px rgba(235, 160, 172, 0.4);
+        font-weight: 550;
+    }
+    /* Monkeytype incorrect writing */
+    .incorrect {
+        color: rgb(243, 139, 168) !important;
+        text-shadow: 0px 0px 5px rgba(243, 139, 168, 0.4);
+    }
+    /* eh idk? */
+    .dark {
+        --background: transparent !important;
+    }
+    .ArticleDetails__main {
+        color: #cdd6f4 !important;
+    }
+
+    [id^=CODEHEMUSET] {
+        display: none !important;
+    }
+    .CODEHEMUSET_img {
+        display: none !important;
+    }
+
+    /* self explanatory */
+    --color-sidebar-border: transparent !important;
+    --secondary: transparent !important;
+    --main-surface-primary: transparent !important;
+    --darkreader-inline-bgcolor: transparent !important;
+    --xhUGwc: transparent !important;
+    --theme-col-txt-title: rgb(137, 180, 250) !important;
+    --theme-col-txt-url: #cdd6f4 !important;
+    --theme-col-txt-snippet: #cdd6f4 !important;
+    --unread-mail-bg: rgba(30, 30, 46, .4) !important;
+    --read-mail-bg: rgba(30, 30, 46, .75) !important;
+    --sub-alt-color: rgba(30, 30, 46, .75) !important;
+    --bgColor-muted: rgba(30, 30, 46, .75) !important;
+    --background-secondary: rgba(30, 30, 46, .75) !important;
+    --color-link: rgb(180, 190, 254) !important;
+    --site-background: transparent !important;
+    --color-text: #cdd6f4 !important;
+    --uc-bg: #1e1e2e00 !important;
+    --uc-content-bg: #1e1e2e00 !important;
+    --body-background-fill: transparent !important;
+    /* forgot what this is for, maybe philpeople.org specific things or something */
+    #article-sidebar,
+    .navbar,
+    .nav {
+        border: 0px solid #D8D8D8 !important;
+    }
+    #header-wrapper {
+        border-bottom: 0px solid #D8D8D8 !important;
+        background-image: none !important;
+    }
+    .authorOrTitle {
+        color: rgb(180, 190, 254) !important;
+    }
+    /* To keep up with the times. Gradient youtube bar! */
+    .ytp-cairo-refresh-signature-moments .ytp-play-progress {
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%, #b4befe), to(#cba6f7)) !important;
+        /*background:-webkit-linear-gradient(left,#cba6f7 80%,#b4befe 100%) ;
+        background:linear-gradient(to right,#cba6f7 80%,#b4befe 100%) ;*/
+    }
+    /* idk */
+    .program_container * {
+        --themeColor-background: transparent !important;
+        --themeColor-text: #cdd6f4;
+    }
+}
+/* Makes firefox media thingy's background transparent */
+@media {
+    html {
+        background-image: none!important
+    }
+}
+::-moz-selection {
+    /* Code for Firefox */
+    background: #b4befe99;
+}
